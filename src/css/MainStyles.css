@@ -1,0 +1,143 @@
+:root {
+    --bg: #111315;
+    --panel: #1a1d20;
+    --panel-strong: #141719;
+    --sidebar: #0d0f10;
+    --card: #202428;
+    --line: #2d3237;
+    --text: #edf1f5;
+    --muted: #a4adb7;
+    --accent: #dfe5eb;
+    --shadow: rgba(0, 0, 0, 0.45);
+    --success: #74d69d;
+    --warning: #f4bf7d;
+    --neutral: #9da6af;
+    --base-color: #ff3300;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+}
+
+body {
+    min-height: 100vh;
+}
+
+button,
+a {
+    font: inherit;
+}
+
+body {
+    min-height: 100vh;
+    background: var(--bg);
+}
+
+.app-shell {
+    display: grid;
+    grid-template-columns: 220px 1fr;
+    min-height: calc(100vh - 78px);
+    background: linear-gradient(180deg, #0f1113 0%, #171a1d 100%);
+    transition: grid-template-columns 0.25s ease;
+}
+
+.topbar {
+  height: 78px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 28px;
+  background: rgba(19, 21, 23, 0.95);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.topbar-left,
+.topbar-right,
+.topbar-center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.topbar-center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.topbar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.top-nav {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.top-nav a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.top-nav a.active,
+.top-nav a:hover {
+  background: #1c2023;
+  color: var(--text);
+  border-color: var(--line);
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 8px 10px;
+}
+
+.brand-mark-text {
+    font-size: 1.8em;
+    color: var(--base-color);
+}
+
+.brand-mark {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #000000;
+  color: #e30202;
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .topbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 16px 18px;
+  }
+
+  .top-nav {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+}
