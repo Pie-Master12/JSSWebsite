@@ -10,7 +10,7 @@ const IFrame = document.getElementsByClassName("PageContent-IFrame")[0]
 
 for (const Button of Buttons) {
     Button.addEventListener("click", () => {
-        IFrame.contentWindow.location.replace(`http://localhost/server/php_files/wapurpages/dashboardsubpages/${Button.id}.php`)
+        IFrame.contentWindow.location.replace(`./dashboardsubpages/${Button.id}.php`)
         Body.querySelector(".DashboardButton-Active").className = "DashboardButton"
         Button.className = "DashboardButton-Active"
     })

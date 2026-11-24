@@ -58,7 +58,7 @@ if ($Avatar) {
             </aside>
 
 
-            <iframe class="PageContent-IFrame"></iframe>
+            <iframe class="PageContent-IFrame" src="./dashboardsubpages/Dashboard.php"></iframe>
         </div>
     </body>
 
