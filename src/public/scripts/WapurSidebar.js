@@ -1,7 +1,17 @@
+// Content body
 const Body = document.body
 
+// Sidebar stuff
 const Sidebar = Body.querySelector(".Sidebar")
-const UserCard = Sidebar.querySelector(".Sidebar-User")
+const Buttons = Sidebar.getElementsByClassName("DashboardButton")
 
-UserCard.addEventListener("click", () => {
-})
+// IFrame stuff
+const IFrame = document.getElementsByClassName("PageContent-IFrame")[0]
+
+for (const Button of Buttons) {
+    Button.addEventListener("click", () => {
+        IFrame.contentWindow.location.replace(`http://localhost/server/php_files/wapurpages/dashboardsubpages/${Button.id}.php`)
+        Body.querySelector(".DashboardButton-Active").className = "DashboardButton"
+        Button.className = "DashboardButton-Active"
+    })
+}

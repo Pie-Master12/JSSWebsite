@@ -38,12 +38,12 @@ if ($Avatar) {
                 </div>
 
                 <nav class="Sidebar-Navigation" aria-label="Sidebar menu">
-                    <a href="#" class="active">Dashboard</a>
-                    <a href="#">Modules</a>
-                    <a href="#">Analytics</a>
-                    <a href="#">Logs</a>
-                    <a href="#">Help</a>
-                    <a href="#">Settings</a>
+                    <a class="DashboardButton-Active" id="Dashboard">Dashboard</a>
+                    <a class="DashboardButton" id="Modules">Modules</a>
+                    <a class="DashboardButton" id="Analytics">Analytics</a>
+                    <a class="DashboardButton" id="Logs">Logs</a>
+                    <a class="DashboardButton" id="Help">Help</a>
+                    <a class="DashboardButton" id="Settings">Settings</a>
                 </nav>
 
                 <a class="Sidebar-User" href="./Profile.php">
@@ -58,7 +58,7 @@ if ($Avatar) {
             </aside>
 
 
-            <iframe class="PageContent"></iframe>
+            <iframe class="PageContent-IFrame"></iframe>
         </div>
     </body>
 
