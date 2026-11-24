@@ -27,7 +27,7 @@ if (!$_SESSION["Logged_In"] == true) {
         <?php CreateSelectionBar(); ?>
         
         <div class="MainContent">
-            
+            <a href="./OAuth/LogOut.php">Log out</a>
         </div>
     </body>
 </html>
