@@ -1,0 +1,97 @@
+button,
+a {
+    font: inherit;
+}
+
+.Topbar {
+  height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 0 28px;
+  background: rgba(19, 21, 23, 0.95);
+  border-bottom: 1px solid #2d3237;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.Topbar-Left,
+.Topbar-Right,
+.Topbar-Center {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.Topbar-Center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.Topbar h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.Topbar-Navigation {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.Topbar-Navigation a {
+  text-decoration: none;
+  color: var(--muted);
+  padding: 10px 14px;
+  border-radius: 8px;
+}
+
+.Topbar-Navigation a.active,
+.Topbar-Navigation a:hover {
+  background: #1c2023;
+  color: #ff3300;
+  border-color: #2d3237;
+}
+
+.Brand {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding: 8px 10px;
+}
+
+.Brand-Mark-Text {
+    font-size: 1.8em;
+    color: #ff3300;
+}
+
+.Brand-Mark {
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  background: #000000;
+  color: #e30202;
+  font-weight: 800;
+}
+
+@media (max-width: 640px) {
+  .Topbar {
+    flex-wrap: wrap;
+    height: auto;
+    padding: 16px 18px;
+  }
+
+  .Topbar-Navigation {
+    order: 3;
+    width: 100%;
+    justify-content: space-between;
+  }
+}

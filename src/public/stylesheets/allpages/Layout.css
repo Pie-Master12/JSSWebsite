@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    margin: 0;
+    min-height: 100%;
+    font-family: 'Times New Roman', Times, serif;
+    background: #121416;
+    color: #ff3300;
+}
+
+
+/* Computer or large screen */
+@media screen and (width >= 27rem) {
+}
+
+
+/* Phones or small screens */
+@media screen and (width < 27rem) {
+}
+
+
+/* Colors */
+:root {
+    --background: #111315;
+    --panel: #1a1d20;
+    --panel-strong: #141719;
+    --sidebar: #0d0f10;
+    --card: #202428;
+    --line: #2d3237;
+    --text: white;
+    --muted: #a4adb7;
+    --accent: #dfe5eb;
+    --shadow: rgba(0, 0, 0, 0.45);
+    --success: #74d69d;
+    --warning: #f4bf7d;
+    --neutral: #9da6af;
+    --base-color: #ff3300;
+}

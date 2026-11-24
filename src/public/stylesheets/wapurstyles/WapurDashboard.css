@@ -1,0 +1,108 @@
+/* The main content container and it's styleing info*/
+
+.MainContent {
+  display: flex;
+  flex-direction: row;
+
+  height: 92vh;
+}
+
+
+/* Sidebar information */
+.Sidebar {
+    background: #0d0f10;
+    border-right: 1px solid #2d3237;
+    padding: 18px 14px 24px;
+
+    width: 11vw;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.Sidebar-Header {
+    display: flex;
+    align-items: center;
+
+    gap: 0px;
+    margin-bottom: 16px;
+    padding: 8px 6px 12px;
+    border-bottom: 1px solid #2d3237;
+}
+
+.Sidebar-Title {
+    margin: 0;
+    font-size: 1.5vw;
+    white-space: nowrap;
+}
+
+.Sidebar-Navigation {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Sidebar-Navigation a {
+  color: #a4adb7;
+  text-decoration: none;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid transparent;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Sidebar-Navigation a:hover,
+.Sidebar-Navigation a.active {
+  background: #1c2023;
+  color: #edf1f5;
+  border-color: #2d3237;
+}
+
+.Sidebar-User {
+  background-color: transparent;
+  border: 0;
+  padding-top: 18px;
+  border-top: 1px solid #2d3237;
+  text-decoration: none;
+}
+
+.User-Profile-Card {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 12px;
+  background: #181b1d;
+  border: 1px solid #2d3237;
+  border-radius: 12px;
+}
+
+.Avatar-Frame {
+  width: 3em;
+  height: 3em;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: #e3e7eb;
+  color: #111;
+  font-size: 0.8rem;
+  font-weight: 700;
+}
+
+.User-Profile-Card strong,
+.User-Profile-Card small {
+  display: block;
+   color: #a4adb7;
+}
+
+
+
+
+/* The page content information */
+.PageContent {
+  width: 89vw;
+  border-width: 0;
+}

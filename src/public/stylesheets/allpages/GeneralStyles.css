@@ -1,0 +1,24 @@
+.In-Page-Notice-Block {
+    border: #ff3300;
+    border-width: 2px;
+
+    background-color: #1b2430;
+    width: 60em;
+    height: auto;
+
+    display: flex;
+    flex-direction: column;
+
+    text-align: center;
+}
+
+.Notice-Name {
+    color: #ff3300;
+
+    border-bottom: solid #2d3237;
+    border-bottom-width: 1px;
+}
+
+.Notice-Text {
+    color: white;
+}
